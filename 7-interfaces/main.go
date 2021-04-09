@@ -6,14 +6,14 @@ type Robot interface {
 	PowerOn() error
 }
 
-type Terminator struct {}
+type Terminator struct{}
 
 func (t Terminator) PowerOn() error {
 	return nil
 }
 
 func sayHello(r Robot) {
-	r.PowerOn()
+	_ = r.PowerOn()
 	fmt.Println("Hello!")
 }
 
@@ -21,5 +21,3 @@ func main() {
 	t1000 := &Terminator{}
 	sayHello(t1000)
 }
-
-

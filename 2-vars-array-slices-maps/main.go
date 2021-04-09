@@ -24,7 +24,7 @@ func main() {
 	var cars = make([]string, 2)
 	cars[0] = "Honda"
 	cars[1] = "Volvo"
-	cars[2] = "Bmw"
+	//cars[2] = "Bmw"
 	cars = append(cars, "Seat", "Fiat", "Toyota")
 	cars = append(cars[:2], cars[2+1:]...)
 

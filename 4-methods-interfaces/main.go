@@ -3,7 +3,7 @@ package main
 import "fmt"
 
 type Pelicula struct {
-	Nombre string
+	Nombre   string
 	Director string
 }
 

@@ -1,4 +1,4 @@
-package __error_handling
+package main
 
 import (
 	"errors"
@@ -14,7 +14,7 @@ func main() {
 		return
 	}
 
-	fmt.Println("%s", file)
+	fmt.Printf("%s\n", file)
 }
 
 func myFunc(a string) (string, error) {
@@ -23,5 +23,5 @@ func myFunc(a string) (string, error) {
 		return "OK", nil
 	}
 
-	return "", errors.New("Error!")
+	return "", errors.New("error")
 }

@@ -4,17 +4,17 @@ import "fmt"
 
 type Persona struct {
 	Nombre string
-	Edad int
+	Edad   int
 }
 
 type Cuadro struct {
-	Color string
+	Color   string
 	Medidas Medidas
 }
 
 type Medidas struct {
 	Ancho float32
-	Alto float32
+	Alto  float32
 }
 
 func main() {
@@ -25,26 +25,26 @@ func main() {
 	p.Nombre = "Mike"
 	p.Edad = 32
 
-	var p2 = Persona{ Nombre: "John", Edad: 29 }
+	// var p2 = Persona{Nombre: "John", Edad: 29}
 
 	var p3 = new(Persona)
 	p3.Nombre = "Alex"
 	p3.Edad = 31
 
-	p4 := Persona{
+	/*p4 := Persona{
 		Nombre: "Berta",
-		Edad: 22,
-	}
+		Edad:   22,
+	}*/
 
 	// --- Struct con Struct anidado ---
 
-	cuadro := Cuadro{
+	/*cuadro := Cuadro{
 		Color: "blanco",
 		Medidas: Medidas{
-			Alto: 1.23,
+			Alto:  1.23,
 			Ancho: 12.3,
 		},
-	}
+	}*/
 
 	// --- Punteros ----
 

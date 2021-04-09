@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	"github.com/rubencougil/1-hello-world/hello"
+	"github.com/rubencougil/mpwar-golang/1-hello-world/hello"
 )
 
 func main() {
