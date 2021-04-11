@@ -33,7 +33,7 @@ func main() {
 	}
 
 	ifConfigResponse := &IfConfigResponse{}
-	json.Unmarshal(body, ifConfigResponse)
+	err = json.Unmarshal(body, ifConfigResponse)
 
 	if err != nil {
 		log.Fatal(err)

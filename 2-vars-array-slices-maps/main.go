@@ -8,6 +8,7 @@ func main() {
 
 	var foo string
 	foo = "Foo"
+	foo := "Foo"
 	fmt.Println(foo)
 
 	bar := "Bar"
@@ -16,17 +17,15 @@ func main() {
 	// --- Arrays ---
 
 	var cheeses [2]string
-	cheeses[0] = "Grullere"
+	cheeses[0] = "Gruyere"
 	cheeses[1] = "Feta"
 
 	// --- Slices ---
 
 	var cars = make([]string, 2)
-	cars[0] = "Honda"
-	cars[1] = "Volvo"
-	//cars[2] = "Bmw"
+	cars[0] = "Audi"
 	cars = append(cars, "Seat", "Fiat", "Toyota")
-	cars = append(cars[:2], cars[2+1:]...)
+	fmt.Printf("%v", cars)
 
 	// --- Maps ---
 

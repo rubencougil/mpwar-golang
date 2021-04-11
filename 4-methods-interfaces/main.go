@@ -7,8 +7,11 @@ type Pelicula struct {
 	Director string
 }
 
-func (p *Pelicula) setNombre(nombre string) {
-	p.Nombre = nombre
+func NewPelicula(nombre, director string) *Pelicula {
+	return &Pelicula{
+		Nombre:   nombre,
+		Director: director,
+	}
 }
 
 func (p *Pelicula) getNombre() string {
@@ -20,7 +23,7 @@ func (p *Pelicula) getNombreAndDirector() (string, string) {
 }
 
 func main() {
-	p := &Pelicula{}
-	p.setNombre("Rambo")
-	fmt.Printf("Nombre de Película: %s", p.getNombre())
+	p := NewPelicula("Rambo", "Spielberg")
+	nombre, director := p.getNombreAndDirector()
+	fmt.Printf("Nombre de Película: %s, Director %s", nombre, director)
 }

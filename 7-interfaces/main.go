@@ -2,22 +2,22 @@ package main
 
 import "fmt"
 
-type Robot interface {
+type RobotInterface interface {
 	PowerOn() error
 }
 
-type Terminator struct{}
+type Robot struct{}
 
-func (t Terminator) PowerOn() error {
+func (t Robot) PowerOn() error {
 	return nil
 }
 
-func sayHello(r Robot) {
-	_ = r.PowerOn()
-	fmt.Println("Hello!")
+func main() {
+	t := &Robot{}
+	sayHello(t)
 }
 
-func main() {
-	t1000 := &Terminator{}
-	sayHello(t1000)
+func sayHello(r RobotInterface) {
+	_ = r.PowerOn()
+	fmt.Println("Hello!")
 }

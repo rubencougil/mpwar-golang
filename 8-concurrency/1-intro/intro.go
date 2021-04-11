@@ -14,5 +14,6 @@ func say(s string) {
 
 func main() {
 	go say("world")
+	time.Sleep(5 * time.Second)
 	fmt.Println("hello")
 }
