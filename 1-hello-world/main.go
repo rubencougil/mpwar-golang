@@ -1,8 +1,8 @@
 package main
 
 import (
+	"1-hello-world/hello"
 	"fmt"
-	"github.com/rubencougil/mpwar-golang/1-hello-world/hello"
 )
 
 func main() {
